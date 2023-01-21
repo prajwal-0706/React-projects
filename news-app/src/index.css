@@ -7,6 +7,12 @@
 
 *{
   font-family: Gumela,'sans-serif';
-  font-size: 70px;
-  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
+
+body{
+  background-image: url('./images/back.jpg');
+}
+
