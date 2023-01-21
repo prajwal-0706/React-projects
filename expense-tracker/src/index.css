@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: Gumela;
+  src: url('../src/fonts/Gumela Regular.otf');
+}
+
+
+*{
+  font-family: Gumela,'sans-serif';
+  font-size: 70px;
+  font-weight: bold;
+}
