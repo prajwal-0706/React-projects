@@ -4,7 +4,7 @@
     display: flex;
     margin-top: .5rem;
     height: 2.5rem;
-    width: 100%;
+    font-weight: bold;
     font-size: 20px;
     justify-content:center;
 
@@ -36,4 +36,9 @@
     display: flex;
     list-style-type: none;
     gap: 2.5rem;
+}
+
+.right-content li:hover{
+    color: blue;
+    cursor: pointer;
 }
