@@ -1,2 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
+.n-wrapper{
+    display: flex;
+    margin-top: .5rem;
+    height: 2.5rem;
+    width: 100%;
+    font-size: 20px;
+    justify-content:center;
+
+}
+
+.Logoheading{
+    font-family: 'Marcellus', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.n-left{
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.right-content{
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem;
+}
