@@ -6,7 +6,7 @@ function NavBar(){
         <div className="n-wrapper">
             <div className="n-left">
                 <div className="logoimg">
-                    <img src={logo} style= {{width:"40px", height:'40px'}} />
+                    <img src={logo} style= {{width:"50px", height:'55px'}} />
                 </div>
                 <span className='Logoheading'>
                     LOGIC TIMES +

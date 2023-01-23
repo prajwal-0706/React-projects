@@ -1,0 +1,12 @@
+.h-wrapper{
+    margin: 8px;
+}
+
+.h-wrapper h1 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.h-wrapper marquee{
+    font-family: 'Marcellus', serif;
+}

@@ -19,7 +19,7 @@
 .n-left{
     display: flex;
     flex: 1;
-    gap: 2rem;
+    gap: 0.4rem;
     align-items: center;
     margin-left: 20px;
 }
