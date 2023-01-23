@@ -1,5 +1,8 @@
 .n-container{
-    background-color:blue;
-    width : 100vw;
-    height: 50vh;
+    width : auto;
+    height: auto;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
 }

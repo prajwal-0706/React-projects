@@ -10,6 +10,9 @@ function Heading() {
             <h1>
                 BREAKING NEWS
             </h1>
+            <marquee behavior="" direction="" className="float-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis itaque quidem deserunt a odio. Sit amet voluptatum officiis rerum reprehenderit quod eos! Quaerat non sequi est pariatur soluta cumque error nam quisquam temporibus, praesentium voluptatibus quis corrupti doloribus architecto molestiae. Repudiandae modi vel amet earum reprehenderit quaerat nesciunt repellendus! Dolor eius fugit commodi porro deleniti dolore qui unde doloribus corrupti adipisci. Numquam voluptatem omnis praesentium quo iure animi quia quasi reprehenderit optio earum nihil consequuntur minus dolores vitae, rerum ex, officiis soluta cupiditate! Eos, adipisci. Rerum voluptatibus tempore labore, autem ut veniam, magnam dolorum, sit architecto vero voluptas. Aliquid, temporibus.
+            </marquee>
         </div>
     )
 

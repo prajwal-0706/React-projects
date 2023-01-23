@@ -9,4 +9,13 @@
 
 .h-wrapper marquee{
     font-family: 'Marcellus', serif;
+    font-size: 25px;
+}
+
+.h-wrapper .float-text{
+    position: fixed;
+    bottom: 0px;
+    background-color: purple;
+    color: white;
+    z-index: 10;
 }
