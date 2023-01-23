@@ -18,3 +18,23 @@ body{
   background-image: url('./images/back.jpg');
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: -10;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #ccd5ae; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+  transform: scale(1.1);
+}
