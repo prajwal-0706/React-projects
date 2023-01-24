@@ -2,15 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import axios from 'axios';
-
-axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=7f29d7e369794bfdba8a3528a94cbfbe')
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => console.error(error));
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
