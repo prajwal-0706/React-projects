@@ -17,7 +17,11 @@ function NewsContainer(){
       for(let i = 0 ; i < 5 ; i++){
         console.log(Arr[i]);
         title = response.data.results[i].title;
+        des = response.data.results[i].description;
+        imgUrl = response.data.results[i].image_url;
         document.getElementById('title' + i).textContent = title;
+        document.getElementById('des'  + i).textContent = title;
+        document.getElementById('img0').src = imgUrl;
 
       } 
 
@@ -41,13 +45,13 @@ function NewsContainer(){
 function News1(){
   return(
       <div className="n-news" >
-          <img src = {pic} alt="" style={{width : '170px', height :"170px"}}/>
+          <img src = {pic}  id='img0'  alt="" style={{width : '170px', height :"170px"}}/>
           <div className="heading">
               <h1 id='title0' >
                   Breaking News
               </h1>
           </div>
-          <div className="description">
+          <div className="description" id='des0'>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
               </p>
@@ -65,7 +69,7 @@ function News2(){
                   Breaking News
               </h1>
           </div>
-          <div className="description">
+          <div className="description" id='des1'>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
               </p>
@@ -83,7 +87,7 @@ function News3(){
                   Breaking News
               </h1>
           </div>
-          <div className="description">
+          <div className="description" id='des2'>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
               </p>
@@ -100,7 +104,7 @@ function News4(){
                   Breaking News
               </h1>
           </div>
-          <div className="description">
+          <div className="description" id='des3'>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
               </p>
@@ -117,7 +121,7 @@ function News5(){
                   Breaking News
               </h1>
           </div>
-          <div className="description">
+          <div className="description" id='des4'>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
               </p>
