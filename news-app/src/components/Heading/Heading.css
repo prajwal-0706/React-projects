@@ -19,3 +19,9 @@
     color: white;
     z-index: 10;
 }
+
+@media screen and (max-width : 440px){
+    .h-wrapper marquee{
+        font-size: 18px;
+    }
+}

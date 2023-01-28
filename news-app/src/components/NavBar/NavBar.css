@@ -42,3 +42,20 @@
     color: blue;
     cursor: pointer;
 }
+
+@media screen and (max-width : 705px){
+    .n-right{
+        display: none;
+    }
+    .n-left{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .n-left{
+        justify-content: center;
+        align-items: center;
+    }
+}

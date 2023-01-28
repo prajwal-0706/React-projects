@@ -9,19 +9,25 @@ function NewsContainer(){
   let title;
   let des;
   let imgUrl;
+  let link;
 
-  axios.get('https://newsdata.io/api/1/news?apikey=pub_16053755d73e6039b4015800fe9f49bc47147&country=in')
+  axios.get('https://newsdata.io/api/1/news?apikey=pub_16053755d73e6039b4015800fe9f49bc47147&language=en')
     .then(response => {
       Arr = response.data.results;
 
       for(let i = 0 ; i < 5 ; i++){
         console.log(Arr[i]);
         title = response.data.results[i].title;
-        des = response.data.results[i].description;
-        imgUrl = response.data.results[i].image_url;
+        des = response.data.results[i].content;
+        imgUrl = response.data.results[i].image_url === null ? pic : response.data.results[i].image_url;        
+        link = response.data.results[i].link ;
         document.getElementById('title' + i).textContent = title;
         document.getElementById('des'  + i).textContent = title;
-        document.getElementById('img0').src = imgUrl;
+        document.getElementById('img' + i).src = imgUrl;
+        document.getElementById('btn'+i).href = link;
+        document.querySelectorAll('.n-news').forEach((ele) =>{
+            ele.style.opacity = '1'
+        })
 
       } 
 
@@ -47,14 +53,17 @@ function News1(){
       <div className="n-news" >
           <img src = {pic}  id='img0'  alt="" style={{width : '170px', height :"170px"}}/>
           <div className="heading">
-              <h1 id='title0' >
-                  Breaking News
-              </h1>
+              <h1 id='title0' ></h1>
           </div>
           <div className="description" id='des0'>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
-              </p>
+              <p></p>
+          </div>
+          <div className="btn">
+            <a href="#" aria-label='label-1' id='btn0' target='_blank'>
+                <button>
+                    Learn More >
+                </button>
+            </a>
           </div>
       </div>
   )
@@ -63,16 +72,19 @@ function News1(){
 function News2(){
   return(
       <div className="n-news" id='News1'>
-          <img src = {pic} alt="" style={{width : '170px', height :"170px"}}/>
+          <img src = {pic} id='img1' alt="" style={{width : '170px', height :"170px"}}/>
           <div className="heading">
-              <h1 id='title1'>
-                  Breaking News
-              </h1>
+              <h1 id='title1'></h1>
           </div>
           <div className="description" id='des1'>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
-              </p>
+              <p></p>
+          </div>
+          <div className="btn">
+            <a href="#" aria-label='label-1' id='btn1' target='_blank'>
+                <button>
+                    Learn More >
+                </button>
+            </a>
           </div>
       </div>
   )
@@ -81,16 +93,19 @@ function News2(){
 function News3(){
   return(
       <div className="n-news" id='News2'>
-          <img src = {pic} alt="" style={{width : '170px', height :"170px"}}/>
+          <img src = {pic} alt="" id='img2' style={{width : '170px', height :"170px"}}/>
           <div className="heading">
-              <h1 id='title2'>
-                  Breaking News
-              </h1>
+              <h1 id='title2'></h1>
           </div>
           <div className="description" id='des2'>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
-              </p>
+              <p></p>
+          </div>
+          <div className="btn">
+            <a href="#" aria-label='label-1' id='btn2' target='_blank'>
+                <button>
+                    Learn More >
+                </button>
+            </a>
           </div>
       </div>
   )
@@ -98,16 +113,19 @@ function News3(){
 function News4(){
   return(
       <div className="n-news" id='News3' >
-          <img src = {pic} alt="" style={{width : '170px', height :"170px"}}/>
+          <img src = {pic} alt="" id='img3' style={{width : '170px', height :"170px"}}/>
           <div className="heading">
-              <h1 id='title3'>
-                  Breaking News
-              </h1>
+              <h1 id='title3'></h1>
           </div>
           <div className="description" id='des3'>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
-              </p>
+              <p></p>
+          </div>
+          <div className="btn">
+            <a href="#" aria-label='label-1' id='btn3' target='_blank'>
+                <button>
+                    Learn More >
+                </button>
+            </a>
           </div>
       </div>
   )
@@ -115,16 +133,19 @@ function News4(){
 function News5(){
   return(
       <div className="n-news" id='News4' >
-          <img src = {pic} alt="" style={{width : '170px', height :"170px"}}/>
+          <img src = {pic} alt="" id='img4' style={{width : '170px', height :"170px"}}/>
           <div className="heading">
-              <h1 id='title4'>
-                  Breaking News
-              </h1>
+              <h1 id='title4'></h1>
           </div>
           <div className="description" id='des4'>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum. Commodi fugit similique provident natus, magni optio fuga rem minima veniam ex, praesentium eaque obcaecati expedita nihil, labore id voluptatibus eum voluptatem omnis? Quaerat quae inventore vero repudiandae sequi explicabo, nemo animi aspernatur, expedita autem labore voluptas incidunt, deserunt at sunt unde harum dolorem quos? Placeat vero quis delectus soluta aut sed vitae voluptate laboriosam. Possimus modi, laborum ipsum voluptatem necessitatibus ipsam quam, expedita ex eaque placeat exercitationem amet doloremque quidem incidunt blanditiis sunt, doloribus asperiores deleniti magnam recusandae tempora quod sed sapiente? Aliquam, tempora! Error reiciendis pariatur consequuntur facere?
-              </p>
+              <p></p>
+          </div>
+          <div className="btn">
+            <a href="#" aria-label='label-1' id='btn4' target='_blank'>
+                <button>
+                    Learn More >
+                </button>
+            </a>
           </div>
       </div>
   )
