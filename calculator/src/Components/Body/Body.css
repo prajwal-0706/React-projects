@@ -1,0 +1,59 @@
+.b-container{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 385px;
+    height: fit-content;
+    margin-top: 2.5rem;
+    color: #29A8FF;
+    border-radius: 4px;
+}
+
+.btn{
+    background: #303136;
+    border-radius: 8px;
+    width: 64px;
+    height: 48px;
+    text-align: center;
+    padding: 13px;
+    padding-top: 11px;
+    padding-bottom: 46px;
+    font-size: 27px;
+}
+
+.b-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.b-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.b-right .spl-btn-1{
+    padding: 35px 10px 51px 10px;
+    height: 97px;
+}
+
+.btn-1{
+    text-align: justify;
+}
+
+.b-left .spl-btn{
+    width: 152px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: white;
+}

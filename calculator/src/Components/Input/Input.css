@@ -1,0 +1,21 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    font-size: 20px;
+    width:385px;
+    height: 7vh;
+    border-radius: 4px;
+    padding: 25px;
+    margin-top: 34px;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,13 @@
+.cal-wrapper {
+  width: 452px;
+  height: fit-content;
+  padding-bottom: 35px;
+  border-radius: 39px;
+  background: linear-gradient(191.34deg, #17181a -4.95%, #17181a 103.74%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3.6px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,25 @@
+#gradient-canvas {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(8px);
+  transform: scale(1.1);
+}
+
+#gradient-canvas-container::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 0;
+  background: linear-gradient(180deg, rgb(15 18 29 / 25%) 50%, #58587f 100%);
+}
+
+.back-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
