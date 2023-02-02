@@ -1,5 +1,7 @@
-import './App.css';
-import Container from './Components/Calculator Container/Container'
+import "./App.css";
+
+import Container from "./Components/Calculator Container/Container";
+
 function App() {
   return (
     <div className="container">
