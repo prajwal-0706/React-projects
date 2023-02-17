@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMde from "react-mde";
+import "react-mde/lib/styles/css/react-mde-all.css";
 import Showdown from "showdown";
 
 export default function Editor({ currentNote, updateNote }) {
