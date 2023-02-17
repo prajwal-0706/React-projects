@@ -3,11 +3,12 @@ import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
 import Split from "react-split";
 import { nanoid } from "nanoid";
+import "./App.css";
 
 const App = () => {
   const noteFromLocalStorage = localStorage.getItem("notes");
   const [notes, setNotes] = React.useState(
-    () => JSON.parse(noteFromLocalStorage) || [] // to avoid rendering again when state changes
+    () => JSON.parse(noteFromLocalStorage) || []
   );
 
   const [currentNoteId, setCurrentNoteId] = React.useState(
@@ -21,7 +22,7 @@ const App = () => {
   function createNewNote() {
     const newNote = {
       id: nanoid(),
-      body: "Danger Danger",
+      body: "#Enter the Heading for your Note Here (This will Reflect as Name of your note)",
     };
 
     setNotes((prevNotes) => [newNote, ...prevNotes]);
@@ -38,7 +39,6 @@ const App = () => {
     );
   }
 
-  // delete notes
   function deleteNote(event, noteId) {
     event.stopPropagation();
     setNotes((oldNotes) => oldNotes.filter((note) => note.id !== noteId));
@@ -71,7 +71,7 @@ const App = () => {
         <div className="no-notes">
           <h1>You have no notes</h1>
           <button className="first-note" onClick={createNewNote}>
-            Create one now
+            Create New Note
           </button>
         </div>
       )}
