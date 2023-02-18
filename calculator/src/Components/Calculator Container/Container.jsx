@@ -4,11 +4,15 @@ import Heading from "../Heading/Heading";
 import Body from "../Body/Body";
 
 function Container() {
+  const handleClick = () => {
+    console.log("Hello World");
+  };
+
   return (
     <div className="cal-wrapper">
       <Heading />
       <Input />
-      <Body />
+      <Body onClick={handleClick} />
     </div>
   );
 }
