@@ -1,9 +1,16 @@
 import "./Input.css";
 
-function Input() {
+function Input(props) {
+  let Prajwal = "123";
   return (
     <div className="input-div">
-      <input className="input" type="number" name="Prajwal" id="input-div" />
+      <input
+        className="input"
+        type="number"
+        value={parseInt(Prajwal)}
+        onChange={props.onChange}
+        id="input-div"
+      />
     </div>
   );
 }
