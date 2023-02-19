@@ -19,13 +19,25 @@ function Container() {
         setarr((prevarr) => {
           return [...prevarr, e.target.textContent];
         });
-
         break;
 
-      // default:
-      //   setarr(e.target.textContent);
-      //   console.log(arr);
-      //   break;
+      case "+":
+      case "-":
+      case "/":
+      case "*":
+        setarr((prevarr) => [...prevarr, e.target.textContent]);
+        // setCurrent((prevcurr) => (
+        //   setarr(prevarr =>{
+        //     return [prevcurr,e.target.textContent]
+        //   })
+        //   ),"");
+        setDisplay((prevdisp) => prevdisp + e.target.textContent);
+        break;
+
+      default:
+        setCurrent((prevcurr) => prevcurr + e.target.textContent);
+        setDisplay((prevdisp) => prevdisp + e.target.textContent);
+        break;
     }
   };
 
@@ -36,7 +48,7 @@ function Container() {
   return (
     <div className="cal-wrapper">
       <Heading />
-      <Input onChange={handleChange} />
+      <Input disp={Display} onChange={handleChange} />
       <Body onClick={handleClick} />
     </div>
   );
