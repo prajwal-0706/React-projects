@@ -7,7 +7,7 @@ import Body from "../Body/Body";
 
 function Container() {
   const [arr, setarr] = useState([]);
-  const [Display, setDisplay] = useState("");
+  const [Display, setDisplay] = useState("0");
   const [Current, setCurrent] = useState("");
 
   const handleChange = (e) => {
@@ -25,12 +25,8 @@ function Container() {
       case "-":
       case "/":
       case "*":
-        setarr((prevarr) => [...prevarr, e.target.textContent]);
-        // setCurrent((prevcurr) => (
-        //   setarr(prevarr =>{
-        //     return [prevcurr,e.target.textContent]
-        //   })
-        //   ),"");
+        setarr((prevarr) => [Current, ...prevarr, e.target.textContent]);
+        setCurrent("");
         setDisplay((prevdisp) => prevdisp + e.target.textContent);
         break;
 
