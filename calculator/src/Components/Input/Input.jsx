@@ -6,7 +6,7 @@ function Input(props) {
       <input
         className="input"
         type="text"
-        value={parseInt(props.disp)}
+        value={props.disp}
         // onChange={props.onChange}
         id="input-div"
       />

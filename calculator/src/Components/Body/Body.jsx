@@ -34,7 +34,7 @@ function Body(props) {
             5
           </div>
           <div className="btn" value="" onClick={props.onClick}>
-            3
+            6
           </div>
         </div>
         <div className="row row-4">
