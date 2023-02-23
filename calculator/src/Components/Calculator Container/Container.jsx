@@ -23,10 +23,11 @@ function Container() {
 
       case "=":
         setarr((prevarr) => [...prevarr, Current]);
-        let length = arr.length - 1;
-        let op1 = parseFloat(arr[0]);
+        // let length = arr.length - 1;
+        // let op1 = parseFloat(arr[0]);
 
-        result(op1);
+        // result(op1);
+        break;
 
       case "+":
       case "-":
@@ -44,38 +45,6 @@ function Container() {
     }
   };
 
-  const result = (op1) => {
-    for (let k = 1; k < length; k++) {
-      if (k % 2 != 0) {
-        switch (arr[k]) {
-          case "+":
-            op1 = op1 + parseFloat(arr[k + 1]);
-            console.log(op1);
-            console.log(arr[k]);
-            console.log(arr[k + 1]);
-            break;
-
-          case "-":
-            op1 = op1 - parseFloat(arr[k + 1]);
-            break;
-
-          case "*":
-            op1 = op1 * parseFloat(arr[k + 1]);
-            break;
-
-          case "/":
-            op1 = op1 / parseFloat(arr[k + 1]);
-            break;
-
-          case "%":
-            op1 = (op1 / parseFloat(arr[k + 1])) * 100;
-            break;
-        }
-      }
-    }
-    console.log(op1);
-    return setDisplay(op1);
-  };
   useEffect(() => {
     console.log(arr);
   }, [arr]);
