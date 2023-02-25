@@ -1,0 +1,28 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.App .svg_1 {
+  position: absolute;
+  left: -25%;
+  top: -55%;
+  transform: rotateZ(-15deg);
+  color: #004aad;
+  z-index: -10;
+}
+
+.App .svg_2 {
+  position: absolute;
+  right: -80%;
+  z-index: -11;
+}
+
+.App .img {
+  width: 50%;
+  height: 70%;
+  background-image: url("./Images/img_1.png");
+  background-position: cover;
+}
