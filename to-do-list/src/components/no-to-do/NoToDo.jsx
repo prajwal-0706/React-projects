@@ -1,6 +1,7 @@
 import React from "react";
 import "./NoToDo.css";
 import wallpaper from "../../Images/wallpaper.png";
+import ToDoList from "../toDoList/ToDoList";
 
 const NoToDo = ({ onClick, ClassDecider }) => {
   return (
@@ -43,7 +44,13 @@ const NoToDo = ({ onClick, ClassDecider }) => {
           <div className="text-1">Make a New To</div>
           <div className="text-2">Do List</div>
         </div>
-        <button onClick={onClick} className="btn">
+        <button
+          onClick={() => {
+            onClick();
+            <ToDoList />;
+          }}
+          className="btn"
+        >
           Create Now
         </button>
       </div>

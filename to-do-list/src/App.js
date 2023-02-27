@@ -8,7 +8,7 @@ const App = () => {
   const [toDoList, settoDoList] = useState([]);
 
   const createClickHandler = () => {
-    setClassDecider((prev) => !ClassDecider);
+    setClassDecider(!ClassDecider);
   };
   return (
     <div className="App">
