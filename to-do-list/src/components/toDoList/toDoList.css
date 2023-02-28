@@ -1,0 +1,6 @@
+.to-do {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  text-align: center;
+}
