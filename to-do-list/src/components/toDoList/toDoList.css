@@ -3,4 +3,45 @@
   width: 100%;
   background: linear-gradient(to right, #43cea2, #185a9d);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.to-do .to-do-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 20rem;
+  position: relative;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px 13px;
+  height: 4.5vh;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.input i {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 30px;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.to-do-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #fff;
+  text-align: start;
 }

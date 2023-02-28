@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       {toDoList.length > 0 ? (
-        <ToDoList />
+        <ToDoList toDoList={toDoList} />
       ) : (
         <NoToDo onClick={createClickHandler} ClassDecider={ClassDecider} />
       )}

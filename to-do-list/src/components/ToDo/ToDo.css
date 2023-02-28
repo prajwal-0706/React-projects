@@ -1,0 +1,22 @@
+.todo {
+  width: 100%;
+  background-color: #000;
+
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5vh;
+  padding: 10px 0px 10px 5px;
+}
+
+.todo li {
+  flex: 1;
+  color: #fff;
+}
+
+.checked {
+  background-color: #fff;
+  color: #06d6a0;
+  font-size: 20px;
+}
