@@ -1,18 +1,20 @@
 .to-do {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #43cea2, #185a9d);
   text-align: center;
+}
+
+.disp {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 2rem;
 }
-
 .to-do .to-do-heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
+  padding: 7rem 0 4rem 0;
 }
 
 .input {
@@ -41,7 +43,5 @@
 
 .to-do-list {
   width: 25rem;
-  height: 100vh;
-  background-color: #fff;
   text-align: start;
 }

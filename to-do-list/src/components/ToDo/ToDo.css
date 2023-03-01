@@ -1,22 +1,30 @@
 .todo {
   width: 100%;
-  background-color: #000;
-
+  background-color: #fff;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4.5vh;
   padding: 10px 0px 10px 5px;
+  margin: 20px 0px;
+  border-radius: 5px;
 }
 
 .todo li {
   flex: 1;
-  color: #fff;
+  color: #000;
 }
 
-.checked {
+.checked,
+.delete {
   background-color: #fff;
-  color: #06d6a0;
-  font-size: 20px;
+  border: none;
+  font-size: 23px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+button i {
+  pointer-events: none;
 }
