@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import NoToDo from "./components/no-to-do/NoToDo";
 import ToDoList from "./components/toDoList/ToDoList";
@@ -9,6 +9,11 @@ const App = () => {
   const [toDoList, settoDoList] = useState([]);
   const [Prompt, setPrompt] = useState("");
 
+  useEffect(() => {
+    if (toDoList.length === 0) {
+      setClassDecider(false);
+    }
+  }, [toDoList]);
   const handleChange = (e) => {
     setnote(e.target.value);
   };
@@ -28,7 +33,7 @@ const App = () => {
 
   const createClickHandler = () => {
     setClassDecider(!ClassDecider);
-    setPrompt(prompt("Enter the Name of To do List :-"));
+    setPrompt(prompt("Enter the Name For Your To Do List :-"));
     createNewNote();
   };
   return (

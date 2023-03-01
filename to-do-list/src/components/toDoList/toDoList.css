@@ -15,6 +15,23 @@
   font-size: 3rem;
   font-weight: 600;
   padding: 7rem 0 4rem 0;
+  color: #fff;
+  /* background: #2980b9; 
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); 
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  );
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
 }
 
 .input {

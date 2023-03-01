@@ -5,7 +5,7 @@ import ToDoList from "../toDoList/ToDoList";
 
 const NoToDo = ({ onClick, ClassDecider }) => {
   return (
-    <div className={`head-1 ${ClassDecider && "fade"}`}>
+    <div className="head-1">
       <svg
         id="eHGcy46pMvO1"
         className="svg_1"
