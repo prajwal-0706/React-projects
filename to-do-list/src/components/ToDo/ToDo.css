@@ -28,3 +28,8 @@
 button i {
   pointer-events: none;
 }
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

@@ -6,7 +6,8 @@ import ToDoList from "./components/toDoList/ToDoList";
 const App = () => {
   const [ClassDecider, setClassDecider] = useState(false);
   const [note, setnote] = useState("");
-  const [toDoList, settoDoList] = useState([1234]);
+  const [toDoList, settoDoList] = useState([]);
+  const [Prompt, setPrompt] = useState("");
 
   const handleChange = (e) => {
     setnote(e.target.value);
@@ -18,22 +19,28 @@ const App = () => {
       {
         task: note,
         completed: false,
+        id: Math.floor(Math.random() * 100),
       },
     ]);
+
+    setnote("");
   };
 
   const createClickHandler = () => {
     setClassDecider(!ClassDecider);
-    let a = prompt("Enter the Name of To do List :-");
+    setPrompt(prompt("Enter the Name of To do List :-"));
+    createNewNote();
   };
   return (
-    <div className="App">
+    <div className={`App ${ClassDecider && "click"}`}>
       {toDoList.length > 0 ? (
         <ToDoList
           toDoList={toDoList}
           note={note}
           changeHandler={handleChange}
           createNewNote={createNewNote}
+          Prompt={Prompt}
+          settoDoList={settoDoList}
         />
       ) : (
         <NoToDo onClick={createClickHandler} ClassDecider={ClassDecider} />
