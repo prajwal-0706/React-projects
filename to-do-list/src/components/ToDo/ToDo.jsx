@@ -19,6 +19,7 @@ const ToDo = ({ task, status, settoDoList, toDo, toDoList }) => {
   const deleteNote = () => {
     settoDoList(toDoList.filter((element) => element.id !== toDo.id));
   };
+
   return (
     <div className={`todo ${status && "complete"}`}>
       <li>{task}</li>

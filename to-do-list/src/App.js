@@ -4,16 +4,33 @@ import NoToDo from "./components/no-to-do/NoToDo";
 import ToDoList from "./components/toDoList/ToDoList";
 
 const App = () => {
-  const [ClassDecider, setClassDecider] = useState(false);
-  const [note, setnote] = useState("");
-  const [toDoList, settoDoList] = useState([]);
-  const [Prompt, setPrompt] = useState("");
+  const classFromStorage = localStorage.getItem("ClassDecider");
+  const noteFromLocalStorage = localStorage.getItem("items");
+  const promptFromLocalStorage = localStorage.getItem("Prompt");
+
+  const [ClassDecider, setClassDecider] = useState(
+    () => JSON.parse(classFromStorage) || false
+  );
+
+  const [note, setnote] = useState("Prajwal");
+
+  const [toDoList, settoDoList] = useState(
+    () => JSON.parse(noteFromLocalStorage) || []
+  );
+
+  const [Prompt, setPrompt] = useState(
+    () => JSON.parse(promptFromLocalStorage) || ""
+  );
 
   useEffect(() => {
     if (toDoList.length === 0) {
       setClassDecider(false);
     }
+    localStorage.setItem("items", JSON.stringify(toDoList));
+    localStorage.setItem("ClassDecider", JSON.stringify(ClassDecider));
+    localStorage.setItem("Prompt", JSON.stringify(Prompt));
   }, [toDoList]);
+
   const handleChange = (e) => {
     setnote(e.target.value);
   };
