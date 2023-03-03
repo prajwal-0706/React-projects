@@ -62,3 +62,43 @@
   width: 25rem;
   text-align: start;
 }
+
+@media screen and (max-width: 872px) {
+  .input input {
+    height: 5vh;
+  }
+
+  .input i {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 31px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .to-do .to-do-heading {
+    font-size: 2.5rem;
+  }
+
+  .input input {
+    height: 6vh;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .to-do-list {
+    width: 19rem;
+  }
+
+  .to-do .to-do-heading {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .input {
+    width: 19.5rem;
+  }
+}

@@ -33,3 +33,16 @@ button i {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 872px) {
+  .checked,
+  .delete {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .todo {
+    height: 6vh;
+  }
+}
