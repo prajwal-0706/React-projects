@@ -1,0 +1,39 @@
+.navBar {
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 13rem;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.content-letters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.logoContainer {
+  margin-left: 10px;
+}
+
+.image {
+  background: url("https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png");
+  background-size: 1404px 105px;
+  width: 53px;
+  height: 36px;
+  background-position: -462px 0;
+  display: inline-block;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
