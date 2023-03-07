@@ -1,8 +1,8 @@
 .navBar {
   width: 100%;
   height: 8vh;
-  position: fixed;
-  z-index: 10;
+  /* position: fixed; */
+  /* z-index: 10; */
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
@@ -10,6 +10,7 @@
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
   font-weight: bolder;
+  border-bottom: 1px solid black;
 }
 
 .content-letters {
