@@ -1,0 +1,14 @@
+.image-slider {
+  width: 100%;
+  height: 92vh;
+}
+
+.swiper {
+  text-align: center;
+  width: 100%;
+  height: 92vh;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
