@@ -12,3 +12,20 @@
   align-items: center;
   justify-content: center;
 }
+
+.swiper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+}
+
+.swiper-pagination span {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+}
