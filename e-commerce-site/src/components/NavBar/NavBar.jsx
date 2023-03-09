@@ -9,21 +9,27 @@ const NavBar = () => {
       </div>
 
       <nav>
-        <div className="content-letters">
-          <div className="content-1">MEN</div>
+        <ul className="content-letters">
+          <li className="content-1">MEN</li>
+          <li className="content-1">WOMEN</li>
+          <li className="content-1">KIDS</li>
+          <li className="content-1">HOME & LIVING</li>
+          <li className="content-1">BEAUTY</li>
+          <li className="content-1">STUDIO</li>
+        </ul>
+        {/* <div className="content-1">MEN</div>
           <div className="content-1">WOMEN</div>
           <div className="content-1">KIDS</div>
           <div className="content-1">HOME & LIVING</div>
           <div className="content-1">BEAUTY</div>
-          <div className="content-1">STUDIO</div>
-        </div>
+          <div className="content-1">STUDIO</div> */}
       </nav>
 
       <div className="input-query">
-        <input type="text" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for products, brands and more" />
       </div>
 
-      
       <div className="profile">
         <div className="profile-1">
           <i class="fa-solid fa-user"></i>

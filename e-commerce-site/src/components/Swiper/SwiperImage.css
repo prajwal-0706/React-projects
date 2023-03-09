@@ -1,12 +1,13 @@
 .image-slider {
   width: 100%;
-  height: 92vh;
+  height: 90vh;
+  padding-top: 10vh;
 }
 
 .swiper {
   text-align: center;
   width: 100%;
-  height: 92vh;
+  height: 90vh;
   font-size: 18px;
   display: flex;
   align-items: center;
