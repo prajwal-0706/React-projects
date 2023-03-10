@@ -10,8 +10,22 @@ const NavBar = () => {
 
       <nav>
         <ul className="content-letters">
-          <li className="content-1">MEN</li>
-          <li className="content-1">WOMEN</li>
+          <li className="content-1">
+            MEN
+            <ul>
+              <li>Hello-1</li>
+              <li>Hello-2</li>
+              <li>Hello-3</li>
+            </ul>
+          </li>
+          <li className="content-1">
+            WOMEN
+            <ul>
+              <li>Jidnyasa</li>
+              <li>Khushi</li>
+              <li>Catty</li>
+            </ul>
+          </li>
           <li className="content-1">KIDS</li>
           <li className="content-1">HOME & LIVING</li>
           <li className="content-1">BEAUTY</li>
