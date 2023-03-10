@@ -8,14 +8,89 @@ const NavBar = () => {
         <a href="#" className="image"></a>
       </div>
 
-      <nav>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">MEN</a>
+              <ul>
+                <li>
+                  <a href="#">Khushi</a>
+                </li>
+                <li>
+                  <a href="#">Khushi</a>
+                  <ul>
+                    <li>
+                      <a href="#">Jiddu</a>
+                    </li>
+                    <li>
+                      <a href="#">Jiddu</a>
+                    </li>
+                    <li>
+                      <a href="#">Jiddu</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Khushi</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">WOMEN</a>
+              <ul>
+                <li>
+                  <a href="#">Jidnyasa</a>
+                </li>
+                <li>
+                  <a href="#">Khushi</a>
+                </li>
+                <li>
+                  <a href="#">Catty</a>
+                  <ul>
+                    <li>
+                      <a href="#">Hii Khushi</a>
+                    </li>
+                    <li>
+                      <a href="#">Hii Khushi</a>
+                    </li>
+                    <li>
+                      <a href="#">Hii Khushi</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">KIDS</a>
+            </li>
+            <li>
+              <a href="#">HOME & LIVING</a>
+            </li>
+            <li>
+              <a href="#">BEAUTY</a>
+            </li>
+            <li>
+              <a href="#">STUDIO</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* <nav>
         <ul className="content-letters">
           <li className="content-1">
-            MEN
+            <a href="#">MEN</a>
             <ul>
-              <li>Hello-1</li>
-              <li>Hello-2</li>
-              <li>Hello-3</li>
+              <li>
+                <a href="#">Hello-1</a>
+              </li>
+              <li>
+                <a href="#">Hello-2</a>
+              </li>
+              <li>
+                <a href="#">Hello-3</a>
+              </li>
             </ul>
           </li>
           <li className="content-1">
@@ -31,13 +106,7 @@ const NavBar = () => {
           <li className="content-1">BEAUTY</li>
           <li className="content-1">STUDIO</li>
         </ul>
-        {/* <div className="content-1">MEN</div>
-          <div className="content-1">WOMEN</div>
-          <div className="content-1">KIDS</div>
-          <div className="content-1">HOME & LIVING</div>
-          <div className="content-1">BEAUTY</div>
-          <div className="content-1">STUDIO</div> */}
-      </nav>
+      </nav> */}
 
       <div className="input-query">
         <i class="fa-solid fa-magnifying-glass"></i>

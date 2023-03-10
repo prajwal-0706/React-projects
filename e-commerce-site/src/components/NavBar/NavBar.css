@@ -16,39 +16,6 @@
   margin-left: 5%;
 }
 
-.content-letters {
-  list-style: none;
-  margin: 0 5%;
-  width: 100%;
-}
-
-.content-letters li {
-  float: left;
-  padding: 0px 20px;
-  cursor: pointer;
-  position: relative;
-}
-
-.content-letters li ul {
-  display: block;
-  position: absolute;
-  left: 0;
-  background-color: #ffffff;
-  width: 100px;
-  margin: 16px 0;
-  display: none;
-}
-
-.content-letters li ul li {
-  display: block;
-  float: none;
-  padding: 10px 21px;
-}
-
-.content-letters li:hover > ul {
-  display: block;
-}
-
 .image {
   background: url("https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png");
   background-size: 1404px 105px;
@@ -91,4 +58,50 @@
   align-items: center;
   gap: 2.5rem;
   font-size: 20px;
+}
+
+/* Drop Down Menu */
+
+header {
+  padding: 0px 20px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+  position: relative;
+}
+
+header nav ul li a {
+  font-size: 17px;
+  padding: 20px;
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: #ffffff;
+  z-index: 100;
+  display: none;
+}
+
+header nav ul li ul li {
+  width: 100%;
+  border-top: 1px solid #000;
+}
+
+header nav ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+header nav ul li:hover > ul {
+  display: initial;
 }
