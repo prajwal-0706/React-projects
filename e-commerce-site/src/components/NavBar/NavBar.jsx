@@ -44,6 +44,17 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a href="#">Khushi</a>
+                  <ul>
+                    <li>
+                      <a href="#">Hii Jidnyasa</a>
+                    </li>
+                    <li>
+                      <a href="#">Hii Jidnyasa</a>
+                    </li>
+                    <li>
+                      <a href="#">Hii Jidnyasa</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#">Catty</a>
