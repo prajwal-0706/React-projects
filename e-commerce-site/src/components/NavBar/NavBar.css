@@ -103,5 +103,5 @@ header nav ul li ul li ul {
 }
 
 header nav ul li:hover > ul {
-  display: initial;
+  display: inline-block;
 }
