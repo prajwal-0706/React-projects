@@ -1,7 +1,7 @@
-import React from "react";
-import "./NoToDo.css";
-import wallpaper from "../../Images/wallpaper.png";
-import ToDoList from "../toDoList/ToDoList";
+import React from 'react';
+import './NoToDo.css';
+import wallpaper from '../../Images/wallpaper.png';
+import ToDoList from '../toDoList/ToDoList';
 
 const NoToDo = ({ onClick, ClassDecider }) => {
   return (
