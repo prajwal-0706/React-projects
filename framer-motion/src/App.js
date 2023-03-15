@@ -10,7 +10,7 @@ function App() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.4,
+        staggerChildren: 1.4,
       },
     },
   };
