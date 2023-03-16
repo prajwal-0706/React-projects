@@ -26,7 +26,19 @@ function App() {
 
   return (
     <motion.div className="App">
-      <motion.h1>Hello World</motion.h1>
+      <motion.h1
+        drag
+        transition={{
+          delay: 0,
+        }}
+        whileHover={{ scale: 1.5, rotate: 20 }}
+        whileTap={{
+          scale: 0.5,
+          rotate: -20,
+        }}
+      >
+        Hello World
+      </motion.h1>
 
       <motion.ul animate="show" initial="hidden" variants={container}>
         <motion.li variants={item}>Jidnyasa</motion.li>
