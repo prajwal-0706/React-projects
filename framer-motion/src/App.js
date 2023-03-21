@@ -10,7 +10,8 @@ function App() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 1.4,
+        staggerChildren: 1,
+        delay: 0.5,
       },
     },
   };
@@ -34,7 +35,7 @@ function App() {
         whileHover={{ scale: 1.5, rotate: 20 }}
         whileTap={{
           scale: 0.5,
-          rotate: -20,
+          rotate: 0,
         }}
       >
         Hello World
