@@ -1,7 +1,14 @@
 import './App.css';
+import Board from './components/Board/Board';
+import FixDiv from './components/Fix Div/FixDiv';
 
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="App">
+      <FixDiv />
+      <Board />
+    </div>
+  );
 }
 
 export default App;
