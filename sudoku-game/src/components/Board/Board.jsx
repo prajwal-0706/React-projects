@@ -22,10 +22,19 @@ const Board = () => {
       </div>
       <div className="board">
         {boardNumbers.map((board_input, index) => {
+          console.log(index);
           return (
-            <div className="row">
-              {board_input.map((board) => {
-                return <Input val={board} />;
+            <div
+              className={`row ${
+                index + 1 !== 9
+                  ? (index + 1) % 3 === 0
+                    ? 'style-for-row'
+                    : ''
+                  : ''
+              }`}
+            >
+              {board_input.map((board, id) => {
+                return <Input val={board} index={id + 1} key={id} />;
               })}
             </div>
           );

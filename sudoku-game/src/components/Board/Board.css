@@ -9,11 +9,12 @@
 
 .board {
   border-radius: 20px;
-  width: 35.4%;
-  height: 60%;
+  /* width: 35.4%;
+  height: 60%; */
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
 }
 
 .mainBoard .heading {
@@ -22,4 +23,8 @@
   margin-bottom: 30px;
   font-size: 1.8rem;
   color: #e3e3e3;
+}
+
+.style-for-row {
+  margin-bottom: 30px;
 }
