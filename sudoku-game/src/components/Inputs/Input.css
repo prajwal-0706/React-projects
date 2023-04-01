@@ -1,0 +1,8 @@
+.boardInput {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid #d7e1f4;
+  /* border: none; */
+}
