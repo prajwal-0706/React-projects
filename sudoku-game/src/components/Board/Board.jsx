@@ -22,7 +22,6 @@ const Board = () => {
       </div>
       <div className="board">
         {boardNumbers.map((board_input, index) => {
-          console.log(index);
           return (
             <div
               className={`row ${
@@ -34,7 +33,13 @@ const Board = () => {
               }`}
             >
               {board_input.map((board, id) => {
-                return <Input val={board} index={id + 1} key={id} />;
+                return (
+                  <Input
+                    val={board}
+                    index={id + 1}
+                    key={Math.floor(Math.random() * 1000 + 3)}
+                  />
+                );
               })}
             </div>
           );
