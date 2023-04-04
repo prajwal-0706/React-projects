@@ -7,7 +7,7 @@ const Input = ({ val, index }) => {
   };
 
   return (
-    <input
+    <div
       onClick={clickHandler}
       type="text"
       value={val}
