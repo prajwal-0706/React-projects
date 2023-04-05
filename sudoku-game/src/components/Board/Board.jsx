@@ -351,7 +351,6 @@ const Board = () => {
   const clickHandler = (row, col) => {
     // setboardNumbers((prev) => {
     //   return [...prev];
-    //   // boardNumbers[row][col].active;
     // });
     console.log(boardNumbers[row][col].data);
     console.log(boardNumbers[row][col].active);
