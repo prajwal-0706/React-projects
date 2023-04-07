@@ -383,7 +383,6 @@ const Board = () => {
                       col={id}
                       val={board}
                       index={id + 1}
-                      key={Math.floor(Math.random() * 1000 + 3)}
                     />
                   );
                 })}
