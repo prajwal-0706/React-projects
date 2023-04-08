@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ToggleSwitcher.css';
+import { ThemeSwitcherContext } from '../../context/themeSwitcherContext';
 
-const ToggleSwitcher = ({ themeSwitcher }) => {
+const ToggleSwitcher = () => {
+  const [toggleTheme, setToggleTheme] = useContext(ThemeSwitcherContext);
+
+  const themeSwitcher = () => {
+    setToggleTheme((prevTheme) => !prevTheme);
+  };
+  
   return (
-    <div className="toggleContainer">
-      <input type="checkbox" id="dark" />
-      <label htmlFor="dark" className="toggle" onClick={themeSwitcher}>
+    <div className={`toggleContainer ${toggleTheme && 'active'}`}>
+      <div className="toggle" onClick={themeSwitcher}>
         <span className="toggle-handler">
           <span className="crater crater-1"></span>
           <span className="crater crater-2"></span>
@@ -17,7 +23,7 @@ const ToggleSwitcher = ({ themeSwitcher }) => {
         <span className="star star-4"></span>
         <span className="star star-5"></span>
         <span className="star star-6"></span>
-      </label>
+      </div>
     </div>
   );
 };

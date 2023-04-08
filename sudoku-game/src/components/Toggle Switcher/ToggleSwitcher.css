@@ -31,10 +31,9 @@
   width: 40px;
   height: 40px;
   background-color: #ffcf96;
-  border-radius: 50px;
+  border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform: rotate(-45deg);
 }
 
 .toggle-handler .crater {
@@ -131,51 +130,51 @@
   transform: translate(3px, 0);
 }
 
-input:checked + .toggle {
+.active .toggle {
   background-color: #749dd6;
 }
 
-input:checked + .toggle .toggle-handler {
+.active .toggle .toggle-handler {
   background-color: #ffe5b5;
   transform: translate(37px, 0);
 }
 
-input:checked + .toggle .toggle-handler .crater {
+.active .toggle .toggle-handler .crater {
   opacity: 1;
 }
 
-input:checked + .toggle .star-1 {
+.active .toggle .star-1 {
   width: 2px;
   height: 2px;
 }
 
-input:checked + .toggle .star-2 {
+.active .toggle .star-2 {
   width: 4px;
   height: 4px;
   transform: translate(-5px, 0);
 }
 
-input:checked + .toggle .star-3 {
+.active .toggle .star-3 {
   width: 2px;
   height: 2px;
   transform: translate(-7px, 0);
 }
 
-input:checked + .toggle .star-4,
-input:checked + .toggle .star-5,
-input:checked + .toggle .star-6 {
+.active .toggle .star-4,
+.active .toggle .star-5,
+.active .toggle .star-6 {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-input:checked + .toggle .star-4 {
+.active .toggle .star-4 {
   transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-input:checked + .toggle .star-5 {
+.active .toggle .star-5 {
   transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-input:checked + .toggle .star-6 {
+.active .toggle .star-6 {
   transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
