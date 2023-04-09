@@ -7,11 +7,6 @@ import { BoardNumbersContext } from '../../context/boardNumberContext';
 const Board = () => {
   const [boardNumbers, setboardNumbers] = useContext(BoardNumbersContext);
 
-  const clickHandler = (row, col) => {
-    console.log(boardNumbers[row][col].data);
-    console.log(boardNumbers[row][col].active);
-  };
-
   return (
     <div className="mainBoard">
       <div className="left">
@@ -36,11 +31,9 @@ const Board = () => {
                 {board_input.map((board, id) => {
                   return (
                     <Input
-                      clickHandler={clickHandler}
+                      isActive={board.active}
                       row={index}
                       col={id}
-                      val={board}
-                      index={id + 1}
                     />
                   );
                 })}
