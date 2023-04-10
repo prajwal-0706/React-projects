@@ -1,14 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './ToggleSwitcher.css';
 import { ThemeSwitcherContext } from '../../context/themeSwitcherContext';
 
 const ToggleSwitcher = () => {
   const [toggleTheme, setToggleTheme] = useContext(ThemeSwitcherContext);
 
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(toggleTheme));
+  });
+
   const themeSwitcher = () => {
     setToggleTheme((prevTheme) => !prevTheme);
   };
-  
+
   return (
     <div className={`toggleContainer ${toggleTheme && 'active'}`}>
       <div className="toggle" onClick={themeSwitcher}>
