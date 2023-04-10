@@ -1,4 +1,3 @@
-import './App.css';
 import Board from './components/Board/Board';
 import FixDiv from './components/Fix Div/FixDiv';
 import ToggleSwitcher from './components/Toggle Switcher/ToggleSwitcher';

@@ -7,7 +7,7 @@ export const BoardNumbersProvider = (props) => {
     [
       {
         data: 0,
-        active: true,
+        active: false,
       },
       {
         data: 0,

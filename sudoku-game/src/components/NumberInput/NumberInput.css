@@ -3,7 +3,16 @@
 }
 
 .Container {
+  transition: all 0.8s ease;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   height: 110px;
+}
+
+.Container .numbers:hover {
+  background-color: #8470f8;
+  transform: scale(1.4);
+  color: #fff;
+  border: none;
+  padding-top: 5px;
 }

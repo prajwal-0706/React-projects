@@ -13,7 +13,6 @@
   transition: all 0.5s ease;
 }
 
-.boardInput:hover,
 .boardInput.active {
   background-color: #8470f8;
   transform: scale(1.5);
@@ -23,4 +22,10 @@
 
 .style-for-col {
   margin-right: 30px;
+}
+
+.boardInput:hover {
+  background-color: #bcb0ff;
+  color: #fff;
+  border: none;
 }
