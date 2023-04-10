@@ -10,22 +10,24 @@
   margin: 4px;
   padding-top: 2px;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .boardInput.active {
-  background-color: #8470f8;
+  background-color: #b980ff;
   transform: scale(1.5);
   color: #fff;
   border: none;
+  pointer-events: none;
 }
 
 .style-for-col {
   margin-right: 30px;
 }
 
-.boardInput:hover {
-  background-color: #bcb0ff;
+.boardInput:hover,
+.boardInput.rowCol {
+  background-color: #e2ccff;
   color: #fff;
   border: none;
 }

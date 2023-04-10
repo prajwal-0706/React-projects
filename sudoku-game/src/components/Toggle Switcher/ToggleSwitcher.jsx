@@ -5,9 +5,9 @@ import { ThemeSwitcherContext } from '../../context/themeSwitcherContext';
 const ToggleSwitcher = () => {
   const [toggleTheme, setToggleTheme] = useContext(ThemeSwitcherContext);
 
-  useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(toggleTheme));
-  });
+  // useEffect(() => {
+  //   localStorage.setItem('theme', JSON.stringify(toggleTheme)); //Setting data in local Storage
+  // });
 
   const themeSwitcher = () => {
     setToggleTheme((prevTheme) => !prevTheme);

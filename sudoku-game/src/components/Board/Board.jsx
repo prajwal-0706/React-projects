@@ -31,6 +31,7 @@ const Board = () => {
                 {board_input.map((board, id) => {
                   return (
                     <Input
+                      isrowCol={board.rowCol}
                       isActive={board.active}
                       row={index}
                       col={id}

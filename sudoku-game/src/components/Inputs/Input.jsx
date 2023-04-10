@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './Input.css';
 import { BoardNumbersContext } from '../../context/boardNumberContext';
 
-const Input = ({ row, col, isActive }) => {
+const Input = ({ row, col, isActive, isrowCol }) => {
   const [boardNumbers, setboardNumbers] = useContext(BoardNumbersContext);
 
   const clickHandler = (row, col) => {
@@ -12,12 +12,28 @@ const Input = ({ row, col, isActive }) => {
           if (index === row && id === col) {
             return {
               ...board,
-              active: !board.active,
+              active: true,
+              rowCol: false,
+            };
+          }
+          if (index === row && id !== col) {
+            return {
+              ...board,
+              active: false,
+              rowCol: true,
+            };
+          }
+          if (id === col && index !== row) {
+            return {
+              ...board,
+              active: false,
+              rowCol: true,
             };
           }
           return {
             ...board,
             active: false,
+            rowCol: false,
           };
         })
       )
@@ -32,7 +48,7 @@ const Input = ({ row, col, isActive }) => {
       }}
       val={boardNumbers[row][col].data}
       type="text"
-      className={`boardInput ${isActive && 'active'} ${
+      className={`boardInput ${isActive && 'active'} ${isrowCol && 'rowCol'} ${
         col + 1 !== 9 ? ((col + 1) % 3 === 0 ? 'style-for-col' : '') : ''
       }`}
     />

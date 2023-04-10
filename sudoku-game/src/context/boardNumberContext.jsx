@@ -8,342 +8,423 @@ export const BoardNumbersProvider = (props) => {
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
-      },
-    ],
-    [
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
+        rowCol: false,
       },
     ],
     [
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
-      },
-    ],
-    [
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
+        rowCol: false,
       },
     ],
     [
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
-      },
-    ],
-    [
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
+        rowCol: false,
       },
     ],
     [
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
-      },
-    ],
-    [
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
-      },
-      {
-        data: 0,
-        active: false,
+        rowCol: false,
       },
     ],
     [
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
       },
       {
         data: 0,
         active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+    ],
+    [
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+    ],
+    [
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+    ],
+    [
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+    ],
+    [
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
+      },
+      {
+        data: 0,
+        active: false,
+        rowCol: false,
       },
       {
         data: 1,
         active: false,
+        rowCol: false,
       },
     ],
   ]);
