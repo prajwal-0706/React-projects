@@ -3,6 +3,7 @@ import './NumberInput.css';
 
 const NumberInput = () => {
   const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
   const ClickHandler = (e) => {
     console.log(e.target.textContent);
   };

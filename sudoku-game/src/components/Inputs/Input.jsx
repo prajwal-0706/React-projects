@@ -9,6 +9,7 @@ const Input = ({ row, col, isActive, isrowCol }) => {
     setboardNumbers(
       boardNumbers.map((board_input, index) =>
         board_input.map((board, id) => {
+          // For Selected One
           if (index === row && id === col) {
             return {
               ...board,
@@ -16,20 +17,20 @@ const Input = ({ row, col, isActive, isrowCol }) => {
               rowCol: false,
             };
           }
-          if (index === row && id !== col) {
+
+          if (
+            (index === row && id !== col) ||
+            (id === col && index !== row) ||
+            ((row + 1 === index || row + 2 === index) && // Row Col and Adjacent blocks of Selected Div
+              (col + 1 === id || col + 2 === id))
+          ) {
             return {
               ...board,
               active: false,
               rowCol: true,
             };
           }
-          if (id === col && index !== row) {
-            return {
-              ...board,
-              active: false,
-              rowCol: true,
-            };
-          }
+
           return {
             ...board,
             active: false,
