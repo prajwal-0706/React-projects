@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
 import './Input.css';
 import { BoardNumbersContext } from '../../context/boardNumberContext';
 
-const Input = ({ row, col, isActive, isrowCol }) => {
+const Input = ({ row, col, isActive, isrowCol, item }) => {
   const [boardNumbers, setboardNumbers] = useContext(BoardNumbersContext);
 
   const clickHandler = (row, col) => {
@@ -17,6 +18,12 @@ const Input = ({ row, col, isActive, isrowCol }) => {
               rowCol: false,
             };
           }
+
+          // if ((row + 1) % 2 === 0) {
+          //   if ((col + 1) % 2 === 0) {
+
+          //   }
+          // }
 
           if (
             (index === row && id !== col) ||
@@ -42,7 +49,8 @@ const Input = ({ row, col, isActive, isrowCol }) => {
   };
 
   return (
-    <div
+    <motion.div
+      variants={item}
       onClick={(e) => {
         clickHandler(row, col);
         console.log(e);

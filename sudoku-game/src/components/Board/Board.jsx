@@ -16,7 +16,7 @@ const Board = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.015,
         type: spring,
       },
     },
@@ -24,10 +24,10 @@ const Board = () => {
 
   const item = {
     hidden: {
-      opacity: 0,
+      x: '750px',
     },
     show: {
-      opacity: 1,
+      x: '0px',
     },
   };
 
@@ -53,6 +53,7 @@ const Board = () => {
         </div>
         <NumberInput />
       </motion.div>
+
       <motion.div
         initial={{
           x: '200px',
@@ -76,8 +77,8 @@ const Board = () => {
         >
           {boardNumbers.map((board_input, index) => {
             return (
-              <motion.div
-                variants={item}
+              <div
+                // variants={item}
                 className={`row ${
                   index + 1 !== 9
                     ? (index + 1) % 3 === 0
@@ -89,6 +90,7 @@ const Board = () => {
                 {board_input.map((board, id) => {
                   return (
                     <Input
+                      item={item}
                       isrowCol={board.rowCol}
                       isActive={board.active}
                       row={index}
@@ -96,7 +98,7 @@ const Board = () => {
                     />
                   );
                 })}
-              </motion.div>
+              </div>
             );
           })}
         </motion.div>

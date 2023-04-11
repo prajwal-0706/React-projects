@@ -1,5 +1,6 @@
 .numbers {
   margin-left: 15px;
+  user-select: none;
 }
 
 .Container {
@@ -7,11 +8,13 @@
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   height: 110px;
+  border: 2px solid #d7e1f4;
+  overflow: hidden;
 }
 
 .Container .numbers:hover {
   background-color: #8470f8;
-  transform: scale(1.4);
+  scale: 1.4;
   color: #fff;
   border: none;
   padding-top: 5px;
