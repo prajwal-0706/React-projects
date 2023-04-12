@@ -1,5 +1,6 @@
 .numbers {
   margin-left: 15px;
+  border: 2px solid #d7e1f4;
   user-select: none;
 }
 
@@ -8,7 +9,6 @@
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   height: 110px;
-  border: 2px solid #d7e1f4;
   overflow: hidden;
 }
 

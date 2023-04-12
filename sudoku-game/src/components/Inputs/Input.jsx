@@ -19,17 +19,24 @@ const Input = ({ row, col, isActive, isrowCol, item }) => {
             };
           }
 
-          // if ((row + 1) % 2 === 0) {
-          //   if ((col + 1) % 2 === 0) {
-
-          //   }
-          // }
+          if ((row + 1) % 2 === 0 && (col + 1) % 2 === 0) {
+            if (
+              (index === row - 1 || index === row + 1) &&
+              (id === col - 1 || id === col + 1)
+            ) {
+              return {
+                ...board,
+                active: false,
+                rowCol: true,
+              };
+            }
+          }
 
           if (
             (index === row && id !== col) ||
             (id === col && index !== row) ||
-            ((row + 1 === index || row + 2 === index) && // Row Col and Adjacent blocks of Selected Div
-              (col + 1 === id || col + 2 === id))
+            (row + 1 === index || row + 2 === index) && // Row Col and Adjacent blocks of Selected Div
+            (col + 1 === id || col + 2 === id)
           ) {
             return {
               ...board,
@@ -57,7 +64,8 @@ const Input = ({ row, col, isActive, isrowCol, item }) => {
       }}
       val={boardNumbers[row][col].data}
       type="text"
-      className={`boardInput ${isActive && 'active'} ${isrowCol && 'rowCol'} ${
+      className={`boardInput ${isActive ? 'active' : ''} 
+      ${isrowCol ? 'rowCol' : ''} ${
         col + 1 !== 9 ? ((col + 1) % 3 === 0 ? 'style-for-col' : '') : ''
       }`}
     />

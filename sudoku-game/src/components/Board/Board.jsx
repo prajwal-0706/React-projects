@@ -3,7 +3,7 @@ import './Board.css';
 import Input from '../Inputs/Input';
 import NumberInput from '../NumberInput/NumberInput';
 import { BoardNumbersContext } from '../../context/boardNumberContext';
-import { motion, spring, Tween } from 'framer-motion';
+import { motion, spring } from 'framer-motion';
 
 const Board = () => {
   const [boardNumbers, setboardNumbers] = useContext(BoardNumbersContext);
@@ -24,7 +24,7 @@ const Board = () => {
 
   const item = {
     hidden: {
-      x: '750px',
+      x: '900px',
     },
     show: {
       x: '0px',
@@ -52,6 +52,54 @@ const Board = () => {
           <h1>Sudoku</h1>
         </div>
         <NumberInput />
+        <div className="button-section">
+          <motion.button
+            whileTap={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+              },
+            }}
+            initial={{
+              x: '-400px',
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.8,
+              type: spring,
+            }}
+            className="btn btn-1"
+          >
+            Pause
+          </motion.button>
+          <motion.button
+            whileTap={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+              },
+            }}
+            initial={{
+              x: '400px',
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.8,
+              type: spring,
+            }}
+            className="btn btn-2"
+          >
+            New Game
+          </motion.button>
+        </div>
       </motion.div>
 
       <motion.div
@@ -78,7 +126,6 @@ const Board = () => {
           {boardNumbers.map((board_input, index) => {
             return (
               <div
-                // variants={item}
                 className={`row ${
                   index + 1 !== 9
                     ? (index + 1) % 3 === 0

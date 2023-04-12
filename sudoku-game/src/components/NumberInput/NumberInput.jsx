@@ -20,11 +20,9 @@ const NumberInput = () => {
 
   const item = {
     hidden: {
-      // opacity: 0,
       y: '200px',
     },
     show: {
-      // opacity: 1,
       y: '0px',
     },
   };
@@ -42,6 +40,12 @@ const NumberInput = () => {
       >
         {numberArray.map((number, index) => (
           <motion.div
+            whileTap={{
+              scale: 0.8,
+              transition: {
+                duration: 0.1,
+              },
+            }}
             variants={item}
             key={index}
             onClick={(e) => ClickHandler(e)}
