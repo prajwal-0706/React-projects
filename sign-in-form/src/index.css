@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #03a9f4;
+  transition: 0.5s;
+}
+
+h2 {
+  font-size: 25px;
+  color: #fff;
+}
+.container {
+  width: 900px;
+  height: 500px;
+  position: relative;
+  margin: 20px;
+}
+
+.leftbg {
+  position: absolute;
+  top: 45px;
+  height: 410px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftbg .box {
+  left: 0;
+  top: 0;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-cont {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  right: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.form-cont.active {
+  left: 50%;
+  right: 0%;
+  top: 0px;
+  transition: 0.5s;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 40px;
+}
+
+.form-cont.active .signinForm {
+  left: -200%;
+}
+.form-cont.active .signupForm {
+  left: 0%;
+}
+.form-cont.active .signupForm button {
+  background-color: #f43648;
+}
+
+.App.active {
+  background-color: #f43648;
+}
+
+.form-cont .form {
+  position: absolute;
+  left: 0%;
+  top: 60px;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  transition: 0.5s;
+}
+
+.form-cont .signupForm {
+  top: -10px;
+  left: 200%;
+}
+
+.form-cont .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form h2 {
+  color: #333;
+}
+
+.form input {
+  padding: 10px;
+}
+
+.form button {
+  padding: 10px 30px;
+  width: 38%;
+  padding: 10px 25px;
+  border: none;
+  background-color: #03a9f4;
+  border-radius: 3px;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    top: -21px;
+    height: 471px;
+  }
+  .form-cont {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .form button {
+    width: 58%;
+  }
+  .leftbg {
+    top: 154px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-cont .form {
+    top: 40px;
+  }
+
+  .leftbg .box {
+    top: 13%;
+    width: 100%;
+    gap: 0.3rem;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 6px 23px;
+    font-size: 12px;
+  }
+
+  .form-cont.active {
+    left: 0px;
+    top: 0px;
+    transition: 0.5s;
+    border-radius: 0px;
+  }
+  .form-cont.active .form {
+    top: -22px;
+  }
+  .h1 {
+    font-size: 19px;
+  }
+
+  .App.active {
+    overflow: hidden;
+  }
+
+  .App.active .leftbg .box {
+    top: 63%;
+  }
 }
