@@ -5,13 +5,24 @@ const client = new Client();
 const account = new Account(client);
 
 client
-  .setEndpoint('http://cloud.appwrite.io/v1')
-  .setProject('64385f72bbae8835bef764385f72bbae8835bef7');
+  .setEndpoint('https://cloud.appwrite.io/v1')
+  .setProject('64385f72bbae8835bef7');
 
-const createNewUser = async (email, password, name) => {
+const createNewUser = async (mail, password, name) => {
+  // const promise = account.create(ID.unique(), mail, password, name);
+
+  // promise.then(
+  //   function (response) {
+  //     console.log(response); // Success
+  //   },
+  //   function (error) {
+  //     console.log(error); // Failure
+  //   }
+  // );
+
   try {
-    const NewUser = await account.create(ID.unique(), email, password, name);
-    console.log(NewUser);
+    const promise = await account.create(ID.unique(), mail, password, name);
+    console.log(promise);
   } catch (error) {
     console.log(error);
   }

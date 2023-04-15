@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import { createNewUser } from './services/appwriteconfig';
 
 function App() {
-  const activeFromLocalStorage = JSON.parse(localStorage.getItem('active'));
-  const [active, setActive] = useState(() => activeFromLocalStorage || false);
+  // const activeFromLocalStorage = JSON.parse(localStorage.getItem('active'));
+  const [active, setActive] = useState(false);
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
 
-  useEffect(() => {
-    localStorage.setItem('active', JSON.stringify(active));
-  }, [active]);
+  // useEffect(() => {
+  //   localStorage.setItem('active', JSON.stringify(active));
+  // }, [active]);
   return (
     <div className={`App ${active ? 'active' : ''}`}>
       <div className="container">
@@ -18,7 +21,6 @@ function App() {
             <button
               onClick={() => {
                 setActive(false);
-                createNewUser('app@gmail.com', 'Prajwalyoumadeit', 'Khushi');
               }}
               className="btn signinbtn"
             >
@@ -50,13 +52,33 @@ function App() {
           </div>
 
           <div className="form signupForm">
-            <form action="#">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                createNewUser(email, password, name);
+              }}
+            >
               <h2>Sign Up</h2>
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Username" />
-              <input type="password" placeholder="Password" />
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+                type="password"
+                placeholder="Password"
+              />
               <input type="password" placeholder="Confirm Password" />
-              <button>Register</button>
+              <button type="submit">Register</button>
               <a href="forgot">forgot password</a>
             </form>
           </div>
