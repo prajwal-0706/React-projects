@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './index.css';
-import { createNewUser } from './services/appwriteconfig';
+import {
+  createEmailSession,
+  createMagicUrlSession,
+  createNewUser,
+} from './services/appwriteconfig';
 
 function App() {
   // const activeFromLocalStorage = JSON.parse(localStorage.getItem('active'));
@@ -8,6 +12,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+  const [userId, setuserId] = useState('');
 
   // useEffect(() => {
   //   localStorage.setItem('active', JSON.stringify(active));
@@ -42,10 +47,39 @@ function App() {
 
         <div className={`form-cont ${active ? 'active' : ''}`}>
           <div className="form signinForm">
-            <form action="#">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                createEmailSession(email, password)
+                  .then((response) => {
+                    setuserId(response.userId);
+                    createMagicUrlSession(response.userId, email).then(
+                      (res) => {
+                        alert(`Email Sent at ${email}`);
+                      }
+                    );
+                  })
+                  .catch((err) => {
+                    console.log(err);
+                  });
+                setEmail('');
+                setName('');
+                setPassword('');
+              }}
+            >
               <h2>Sign In</h2>
-              <input type="text" placeholder="Username" />
-              <input type="password" placeholder="Password" />
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+                type="password"
+                placeholder="Password"
+              />
               <button>Sign in</button>
               <a href="forgot">forgot password</a>
             </form>
@@ -56,6 +90,9 @@ function App() {
               onSubmit={(e) => {
                 e.preventDefault();
                 createNewUser(email, password, name);
+                setEmail('');
+                setName('');
+                setPassword('');
               }}
             >
               <h2>Sign Up</h2>

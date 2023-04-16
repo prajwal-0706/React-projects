@@ -28,4 +28,24 @@ const createNewUser = async (mail, password, name) => {
   }
 };
 
-export { createNewUser };
+const createEmailSession = async (email, password) => {
+  try {
+    const promise = await account.createEmailSession(email, password);
+    console.log(promise);
+    return promise;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const createMagicUrlSession = async (userId, email) => {
+  try {
+    const promise = await account.createMagicURLSession(userId, email);
+    console.log(promise);
+    return promise;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export { createNewUser, createEmailSession, createMagicUrlSession };
