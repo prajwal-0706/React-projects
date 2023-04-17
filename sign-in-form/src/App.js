@@ -7,16 +7,16 @@ import {
 } from './services/appwriteconfig';
 
 function App() {
-  // const activeFromLocalStorage = JSON.parse(localStorage.getItem('active'));
-  const [active, setActive] = useState(false);
+  const activeFromLocalStorage = JSON.parse(localStorage.getItem('active'));
+  const [active, setActive] = useState(() => activeFromLocalStorage || false);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
-  const [userId, setuserId] = useState('');
+  // const [userId, setuserId] = useState('');
 
-  // useEffect(() => {
-  //   localStorage.setItem('active', JSON.stringify(active));
-  // }, [active]);
+  useEffect(() => {
+    localStorage.setItem('active', JSON.stringify(active));
+  }, [active]);
   return (
     <div className={`App ${active ? 'active' : ''}`}>
       <div className="container">
