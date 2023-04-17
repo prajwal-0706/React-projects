@@ -1,5 +1,5 @@
-import React from "react";
-import "./ToDo.css";
+import React from 'react';
+import './ToDo.css';
 
 const ToDo = ({ task, status, settoDoList, toDo, toDoList }) => {
   const completedNote = () => {
@@ -21,7 +21,7 @@ const ToDo = ({ task, status, settoDoList, toDo, toDoList }) => {
   };
 
   return (
-    <div className={`todo ${status && "complete"}`}>
+    <div className={`todo ${status ? 'complete' : ''}`}>
       <li>{task}</li>
       <button onClick={completedNote} className="checked">
         <i className="fa-solid fa-square-check"></i>

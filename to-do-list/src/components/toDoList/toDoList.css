@@ -89,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 400px) {
   .to-do-list {
     width: 19rem;
   }
