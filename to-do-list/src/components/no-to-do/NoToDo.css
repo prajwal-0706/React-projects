@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 400px) {
   .head-1 .svg_2 {
     display: block;
     transform: rotateZ(94deg);
@@ -156,7 +156,7 @@
 
   .liners {
     font-size: 12px;
-    margin-left: -45%;
+    margin-left: -37%;
     margin-top: -50px;
     color: #e0e0e0;
   }
