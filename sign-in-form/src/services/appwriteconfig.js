@@ -23,6 +23,7 @@ const createNewUser = async (mail, password, name) => {
   try {
     const promise = await account.create(ID.unique(), mail, password, name);
     console.log(promise);
+    return promise;
   } catch (error) {
     console.log(error);
   }
@@ -35,6 +36,7 @@ const createEmailSession = async (email, password) => {
     return promise;
   } catch (error) {
     console.log(error);
+    return error;
   }
 };
 
