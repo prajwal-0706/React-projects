@@ -12,7 +12,7 @@ function App() {
           <ToggleSwitcher />
           <FixDiv />
           <Board />
-        </div>
+        </div>d
       </ThemeSwitchProvider>
     </BoardNumbersProvider>
   );
