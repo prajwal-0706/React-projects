@@ -5,5 +5,5 @@
 3. [Notes Keeper App](https://notes-keeper-prajwal.netlify.app/)
 4. [To Do List App](https://to-do-list-khushi.netlify.app/)
 5. [Sudoku Game](https://sudoku-kh.netlify.app/)
-6. [Sign In Form](https://form-kh.netlify.app/)
+6. [Sign In](https://form-kh.netlify.app/)
 
