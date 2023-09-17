@@ -6,7 +6,9 @@ import { BoardNumbersContext } from '../../context/boardNumberContext';
 const Input = ({ row, col, isActive, isrowCol, item }) => {
   const [boardNumbers] = useContext(BoardNumbersContext);
 
-  const clickHandler = (row, col) => {};
+  const clickHandler = (row, col) => {
+    console.log(row, col);
+  };
 
   return (
     <motion.div

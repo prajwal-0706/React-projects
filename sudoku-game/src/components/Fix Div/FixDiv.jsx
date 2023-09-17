@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './FixDiv.css';
 import { ThemeSwitcherContext } from '../../context/themeSwitcherContext';
-import { easeIn, motion, spring } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const FixDiv = () => {
   const [toggleTheme] = useContext(ThemeSwitcherContext);

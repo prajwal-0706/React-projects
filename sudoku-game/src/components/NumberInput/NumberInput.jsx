@@ -30,6 +30,26 @@ const NumberInput = () => {
   const ClickHandler = (e) => {
     console.log(e.target.textContent);
   };
+
+  const NumberInp = ({ number, index }) => {
+    return (
+      <motion.div
+        whileTap={{
+          scale: 0.8,
+          transition: {
+            duration: 0.1,
+          },
+        }}
+        variants={item}
+        key={index}
+        onClick={(e) => ClickHandler(e)}
+        className="boardInput numbers"
+      >
+        {number}
+      </motion.div>
+    );
+  };
+
   return (
     <div className="board Container">
       <motion.div
@@ -38,22 +58,19 @@ const NumberInput = () => {
         variants={Container}
         className="Numbers"
       >
-        {numberArray.map((number, index) => (
-          <motion.div
-            whileTap={{
-              scale: 0.8,
-              transition: {
-                duration: 0.1,
-              },
-            }}
-            variants={item}
-            key={index}
-            onClick={(e) => ClickHandler(e)}
-            className="boardInput numbers"
-          >
-            {number}
-          </motion.div>
-        ))}
+        <div className="number-input-1">
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+        </div>
+        <div className="number-input-2">
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+          <NumberInp number={1} />
+        </div>
       </motion.div>
     </div>
   );
