@@ -6,10 +6,6 @@ import { motion, spring } from 'framer-motion';
 const ToggleSwitcher = () => {
   const [toggleTheme, setToggleTheme] = useContext(ThemeSwitcherContext);
 
-  // useEffect(() => {
-  //   localStorage.setItem('theme', JSON.stringify(toggleTheme)); //Setting data in local Storage
-  // });
-
   const themeSwitcher = () => {
     setToggleTheme((prevTheme) => !prevTheme);
   };
